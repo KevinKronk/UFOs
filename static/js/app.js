@@ -7,7 +7,7 @@ var tbody = d3.select("tbody");
 // Simple JavaScript console.log statement
 function printHello() {
     console.log("Hello there!");
-}
+};
 
 // Build a table
 function buildTable(data) {
@@ -25,4 +25,22 @@ function buildTable(data) {
             cell.text(val);
         });
     });
-}
+};
+
+function handleClick() {
+    // Grab datetime value from the filter
+    let date = d3.select("#datetime").property("value");
+    let filteredData = tableData;
+    // If there's a date, apply filter to where it matches with the data
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
+    // Rebuild the table with the filtered data
+    buildTable(filteredData);
+};
+
+// Look for button click and apply function
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Build table when the page loads
+buildTable(tableData);
