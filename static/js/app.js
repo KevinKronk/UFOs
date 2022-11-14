@@ -7,7 +7,7 @@ var tbody = d3.select("tbody");
 // Simple JavaScript console.log statement
 function printHello() {
     console.log("Hello there!");
-};
+}
 
 // Build a table
 function buildTable(data) {
@@ -23,9 +23,10 @@ function buildTable(data) {
             let cell = row.append("td");
             // Add the value to the text of the "td"
             cell.text(val);
-        });
+            }
+        );
     });
-};
+}
 
 function handleClick() {
     // Grab datetime value from the filter
@@ -37,7 +38,7 @@ function handleClick() {
     };
     // Rebuild the table with the filtered data
     buildTable(filteredData);
-};
+}
 
 // Look for button click and apply function
 d3.selectAll("#filter-btn").on("click", handleClick);
