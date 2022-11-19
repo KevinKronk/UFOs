@@ -6,10 +6,12 @@ As a fun side hobby, Dana has asked us to build a website about UFO sightings. O
 
 ## Results - How To Use
 
-(describe to Dana how to use the webpage by walking through the process of using the search criteria. Use images during the filtering process to support your explanation)
-
 ![Empty Search](static/images/EmptySearch.png)
+
+The website starts with the table automatically filled with all the data, and the input boxes empty, as shown in the image above. The inputs show placeholder values in grey so that you have an idea of the kind of values that might exist in the dataset. To filter the table you enter a value into one of the input boxes and either press enter or click outside of the box. Your entry will appear as black text in the input box, and you should see the table immediately update to either show filtered data (like in the image below) or no data, if what you entered wasn't in the dataset. You can enter multiple filters to get the results down to just a few entries, as shown in the final image. 
+
 ![One Filter](static/images/OneFilter.png)
+
 ![Multiple Filters](static/images/MultipleFilters.png)
 
 ## Summary
