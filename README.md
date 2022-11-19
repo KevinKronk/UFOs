@@ -2,7 +2,11 @@
 
 ## Overview - Purpose
 
+As a fun side hobby, Dana has asked us to build a website about UFO sightings. On the website there is a jumbotron header, an article header with a small article, as well as a table on UFO sightings that can be filtered. Our goal is to make it so the table can be filtered by multiple criteria at the same time. The filter options are by date, city, state, country, and UFO shape. 
+
 ## Results - How To Use
+
+(describe to Dana how to use the webpage by walking through the process of using the search criteria. Use images during the filtering process to support your explanation)
 
 ## Summary
 
